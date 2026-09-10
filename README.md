@@ -19,15 +19,15 @@
 - #### Paper模板
 - #### 总体思路与框架
 ### Day2 (2026.9.11)
-- #### Problem1 
+- #### Problem1 & Paper问题背景与重述
 - #### Problem2 & Paper跟进Problem1
 - #### Problem3 (一半) & Paper跟进Problem2
 ### Day3 (2026.9.12)
-- #### Problem3（完）& Paper跟进Problem2
+- #### Problem3（完）& Paper跟进问题分析与模型准备
 - #### Problem4 & Paper跟进Problem3
 - #### Paper跟进Problem4
-- #### Paper结尾
-- #### 一起修正+图片优化
+- #### 核对正确性与成果xls & Paper结尾（摘要，关键词，问题分析，总结）
+- #### 修正+图片优化
 ### Day4 (2026.9.13 20:00前)
 - #### 优化图表
 - #### AIGC查重与文本优化
