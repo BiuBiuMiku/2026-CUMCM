@@ -1,0 +1,667 @@
+{
+  "main": {
+    "variant": "main",
+    "days": 365,
+    "checks": {
+      "soc_reconstruction_kwh": 6.002665031701326e-11,
+      "balance_kwh": 1.1368683772161603e-13,
+      "h_reconstruction_kwh": 1.1368683772161603e-13,
+      "w_reconstruction_kwh": 5.684341886080802e-14,
+      "soc_bounds_kwh": 0.0,
+      "power_kwh": 0.0,
+      "nonnegative_kwh": 0.0,
+      "emergency_charging_count": 0,
+      "simultaneous_count": 0,
+      "plan_ledger_kwh": 1.1368683772161603e-13,
+      "executed_template_mapping_kwh": 0.0,
+      "lp_residual": 7.275957614183426e-12,
+      "settlement_identity_yuan": 1.4551915228366852e-11
+    },
+    "initial_feb_soc_kwh": 10800.0,
+    "calendar_cost_yuan": 14951752.026849756,
+    "template_cost_yuan": 14951739.532004772,
+    "planned_cost_yuan": 13955653.369862169,
+    "adjustment_net_cost_yuan": 316897.87758817733,
+    "calendar_emergency_cost_yuan": 679188.2845544242,
+    "template_emergency_cost_yuan": 679188.284554424,
+    "calendar_emergency_kwh": 130061.53882601169,
+    "template_emergency_kwh": 130061.53882601169,
+    "terminal_midnight_soc_kwh": 1807.3803654154813,
+    "terminal_template_soc_kwh": 1780.5615382967842,
+    "accepted_updates": {
+      "6": 291,
+      "12": 297,
+      "18": 197
+    },
+    "same_actions_no_refund_extra_cost_yuan": 526982.2738478674,
+    "paper_dates": [
+      {
+        "date": "2025-03-20",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 666.7668124372889,
+          "18:00": 663.0953541888455,
+          "20:00": 57.51577228122278
+        },
+        "calendar_q_kwh": 78399.1870365333,
+        "calendar_cost_yuan": 54646.591736289134,
+        "soc0_kwh": 9318.546831596861,
+        "soc24_kwh": 8790.493583019734,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-06-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 126.8650675089519,
+          "18:00": 385.9016666666667,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 35166.26765943914,
+        "calendar_cost_yuan": 21771.585409332307,
+        "soc0_kwh": 3592.5463616337574,
+        "soc24_kwh": 3855.508215114564,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-09-23",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 380.02124999999995,
+          "14:00": 0.0,
+          "16:00": 455.799784350586,
+          "18:00": 768.3849370744492,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 67098.33623409999,
+        "calendar_cost_yuan": 47184.50660299842,
+        "soc0_kwh": 1454.2759697661227,
+        "soc24_kwh": 2252.687900561463,
+        "emergency_events": [
+          [
+            45923,
+            "09:10-10:00",
+            208.94030704040318
+          ],
+          [
+            null,
+            "20:30-20:50",
+            414.1760440723423
+          ],
+          [
+            null,
+            "21:00-21:20",
+            48.35010071296508
+          ],
+          [
+            null,
+            "21:40-21:50",
+            26.67378757166914
+          ]
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 930.9627907141792,
+          "14:00": 0.0,
+          "16:00": 836.3188272349042,
+          "18:00": 712.6333333333333,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 96324.83788961152,
+        "calendar_cost_yuan": 62836.56192514053,
+        "soc0_kwh": 1906.0956053658172,
+        "soc24_kwh": 2055.753633687818,
+        "emergency_events": [
+          [
+            46012,
+            "08:00-08:10",
+            21.731674502224337
+          ]
+        ]
+      }
+    ],
+    "source_hashes": {
+      "附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "附件5/result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc"
+    }
+  },
+  "only0": {
+    "variant": "only0",
+    "days": 365,
+    "checks": {
+      "soc_reconstruction_kwh": 6.366462912410498e-11,
+      "balance_kwh": 1.1368683772161603e-13,
+      "h_reconstruction_kwh": 1.1368683772161603e-13,
+      "w_reconstruction_kwh": 5.684341886080802e-14,
+      "soc_bounds_kwh": 0.0,
+      "power_kwh": 0.0,
+      "nonnegative_kwh": 0.0,
+      "emergency_charging_count": 0,
+      "simultaneous_count": 0,
+      "plan_ledger_kwh": 0.0,
+      "executed_template_mapping_kwh": 0.0,
+      "lp_residual": 5.4569682106375694e-12,
+      "settlement_identity_yuan": 0.0
+    },
+    "initial_feb_soc_kwh": 10800.0,
+    "calendar_cost_yuan": 15650895.935177455,
+    "template_cost_yuan": 15650869.015686734,
+    "planned_cost_yuan": 13970268.562444828,
+    "adjustment_net_cost_yuan": 0.0,
+    "calendar_emergency_cost_yuan": 1680600.4532419057,
+    "template_emergency_cost_yuan": 1680600.4532419057,
+    "calendar_emergency_kwh": 291618.65804741293,
+    "template_emergency_kwh": 291618.658047413,
+    "terminal_midnight_soc_kwh": 1722.4478287194515,
+    "terminal_template_soc_kwh": 1670.6408753875867,
+    "accepted_updates": {
+      "6": 0,
+      "12": 0,
+      "18": 0
+    },
+    "same_actions_no_refund_extra_cost_yuan": 0.0,
+    "paper_dates": [
+      {
+        "date": "2025-03-20",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 707.4101898970802,
+          "14:00": 0.0,
+          "16:00": 729.4950654154776,
+          "18:00": 663.0953541888455,
+          "20:00": 124.20431055704739
+        },
+        "calendar_q_kwh": 85899.26230904536,
+        "calendar_cost_yuan": 56977.89561027716,
+        "soc0_kwh": 9121.324601065024,
+        "soc24_kwh": 9212.686819234772,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-06-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 220.05499725443528,
+          "18:00": 477.8612010559423,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 36467.43068620976,
+        "calendar_cost_yuan": 22367.762467075085,
+        "soc0_kwh": 3612.3988179727603,
+        "soc24_kwh": 3855.508215114564,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-09-23",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 356.4107240139429,
+          "14:00": 0.0,
+          "16:00": 455.799784350586,
+          "18:00": 768.3849370744492,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 65804.38788421234,
+        "calendar_cost_yuan": 53276.60309917321,
+        "soc0_kwh": 1454.2759697661227,
+        "soc24_kwh": 2252.687900561463,
+        "emergency_events": [
+          [
+            45923,
+            "09:10-10:00",
+            208.94030704040318
+          ],
+          [
+            null,
+            "20:30-20:50",
+            1586.025262709872
+          ],
+          [
+            null,
+            "21:00-21:50",
+            138.59463445002248
+          ]
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 930.9627907141792,
+          "14:00": 0.0,
+          "16:00": 786.0378138946535,
+          "18:00": 723.096739684211,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 95349.9153449965,
+        "calendar_cost_yuan": 61803.27175472492,
+        "soc0_kwh": 1906.0956053658172,
+        "soc24_kwh": 1964.748438583442,
+        "emergency_events": [
+          [
+            46012,
+            "08:00-08:10",
+            21.731674502224337
+          ]
+        ]
+      }
+    ],
+    "source_hashes": {
+      "附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "附件5/result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc"
+    }
+  },
+  "no6": {
+    "variant": "no6",
+    "days": 365,
+    "checks": {
+      "soc_reconstruction_kwh": 8.93578544491902e-11,
+      "balance_kwh": 1.1368683772161603e-13,
+      "h_reconstruction_kwh": 1.1368683772161603e-13,
+      "w_reconstruction_kwh": 5.684341886080802e-14,
+      "soc_bounds_kwh": 0.0,
+      "power_kwh": 0.0,
+      "nonnegative_kwh": 0.0,
+      "emergency_charging_count": 0,
+      "simultaneous_count": 0,
+      "plan_ledger_kwh": 1.1368683772161603e-13,
+      "executed_template_mapping_kwh": 0.0,
+      "lp_residual": 9.094947017729282e-12,
+      "settlement_identity_yuan": 1.4551915228366852e-11
+    },
+    "initial_feb_soc_kwh": 10800.0,
+    "calendar_cost_yuan": 15000396.616794271,
+    "template_cost_yuan": 15000369.69730355,
+    "planned_cost_yuan": 13959391.589117616,
+    "adjustment_net_cost_yuan": 130446.71713595872,
+    "calendar_emergency_cost_yuan": 910531.3910499755,
+    "template_emergency_cost_yuan": 910531.3910499755,
+    "calendar_emergency_kwh": 176001.21011958984,
+    "template_emergency_kwh": 176001.21011958984,
+    "terminal_midnight_soc_kwh": 1743.5031907165474,
+    "terminal_template_soc_kwh": 1691.6962373846825,
+    "accepted_updates": {
+      "6": 0,
+      "12": 303,
+      "18": 202
+    },
+    "same_actions_no_refund_extra_cost_yuan": 399507.5964403249,
+    "paper_dates": [
+      {
+        "date": "2025-03-20",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 666.7668124372889,
+          "18:00": 663.0953541888455,
+          "20:00": 57.51577228122278
+        },
+        "calendar_q_kwh": 78449.40876570015,
+        "calendar_cost_yuan": 54651.648822341536,
+        "soc0_kwh": 9318.546831596861,
+        "soc24_kwh": 8790.493583019734,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-06-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 126.8650675089519,
+          "18:00": 385.9016666666667,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 35603.38451769321,
+        "calendar_cost_yuan": 21983.392163614426,
+        "soc0_kwh": 3612.3988179727603,
+        "soc24_kwh": 3855.508215114564,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-09-23",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 380.02124999999995,
+          "14:00": 0.0,
+          "16:00": 455.799784350586,
+          "18:00": 768.3849370744492,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 67098.33623409999,
+        "calendar_cost_yuan": 47184.50660299842,
+        "soc0_kwh": 1454.2759697661227,
+        "soc24_kwh": 2252.687900561463,
+        "emergency_events": [
+          [
+            45923,
+            "09:10-10:00",
+            208.94030704040318
+          ],
+          [
+            null,
+            "20:30-20:50",
+            414.1760440723423
+          ],
+          [
+            null,
+            "21:00-21:20",
+            48.35010071296508
+          ],
+          [
+            null,
+            "21:40-21:50",
+            26.67378757166914
+          ]
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 906.6833333333333,
+          "14:00": 0.0,
+          "16:00": 815.2408017829048,
+          "18:00": 712.6333333333333,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 96458.35473015669,
+        "calendar_cost_yuan": 63136.28719315119,
+        "soc0_kwh": 1906.0956053658172,
+        "soc24_kwh": 2383.3153776935583,
+        "emergency_events": [
+          [
+            46012,
+            "08:00-08:10",
+            21.731674502224337
+          ]
+        ]
+      }
+    ],
+    "source_hashes": {
+      "附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "附件5/result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc"
+    }
+  },
+  "no12": {
+    "variant": "no12",
+    "days": 365,
+    "checks": {
+      "soc_reconstruction_kwh": 5.275069270282984e-11,
+      "balance_kwh": 1.1368683772161603e-13,
+      "h_reconstruction_kwh": 1.1368683772161603e-13,
+      "w_reconstruction_kwh": 5.684341886080802e-14,
+      "soc_bounds_kwh": 0.0,
+      "power_kwh": 0.0,
+      "nonnegative_kwh": 0.0,
+      "emergency_charging_count": 0,
+      "simultaneous_count": 0,
+      "plan_ledger_kwh": 1.1368683772161603e-13,
+      "executed_template_mapping_kwh": 0.0,
+      "lp_residual": 7.275957614183426e-12,
+      "settlement_identity_yuan": 1.4551915228366852e-11
+    },
+    "initial_feb_soc_kwh": 10800.0,
+    "calendar_cost_yuan": 15090490.539493749,
+    "template_cost_yuan": 15090478.044648765,
+    "planned_cost_yuan": 13957138.230934676,
+    "adjustment_net_cost_yuan": 448753.2168811438,
+    "calendar_emergency_cost_yuan": 684586.5968329438,
+    "template_emergency_cost_yuan": 684586.5968329438,
+    "calendar_emergency_kwh": 131355.59822505646,
+    "template_emergency_kwh": 131355.59822505646,
+    "terminal_midnight_soc_kwh": 1808.6387339410242,
+    "terminal_template_soc_kwh": 1781.819906822327,
+    "accepted_updates": {
+      "6": 291,
+      "12": 0,
+      "18": 204
+    },
+    "same_actions_no_refund_extra_cost_yuan": 194515.97263619525,
+    "paper_dates": [
+      {
+        "date": "2025-03-20",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 703.5554586384518,
+          "14:00": 0.0,
+          "16:00": 670.5427789591533,
+          "18:00": 663.0953541888455,
+          "20:00": 124.20431055704739
+        },
+        "calendar_q_kwh": 84087.27083569029,
+        "calendar_cost_yuan": 56323.977301519684,
+        "soc0_kwh": 9186.572108167178,
+        "soc24_kwh": 9190.61848801895,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-06-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 135.69859954766153,
+          "18:00": 385.9016666666667,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 35289.018677218206,
+        "calendar_cost_yuan": 21818.57017634413,
+        "soc0_kwh": 3563.5346492535045,
+        "soc24_kwh": 3855.508215114564,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-09-23",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 356.4107240139429,
+          "14:00": 0.0,
+          "16:00": 455.799784350586,
+          "18:00": 768.3849370744492,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 67046.45468541139,
+        "calendar_cost_yuan": 47444.93988817332,
+        "soc0_kwh": 1454.2759697661227,
+        "soc24_kwh": 2252.687900561463,
+        "emergency_events": [
+          [
+            45923,
+            "09:10-10:00",
+            208.94030704040318
+          ],
+          [
+            null,
+            "20:30-20:50",
+            414.1760440723415
+          ],
+          [
+            null,
+            "21:00-21:20",
+            48.35010071296508
+          ],
+          [
+            null,
+            "21:40-21:50",
+            26.67378757166914
+          ]
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 930.9627907141792,
+          "14:00": 0.0,
+          "16:00": 836.3188272349042,
+          "18:00": 712.6333333333333,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 96324.83788961152,
+        "calendar_cost_yuan": 62836.56192514053,
+        "soc0_kwh": 1906.0956053658172,
+        "soc24_kwh": 2055.753633687818,
+        "emergency_events": [
+          [
+            46012,
+            "08:00-08:10",
+            21.731674502224337
+          ]
+        ]
+      }
+    ],
+    "source_hashes": {
+      "附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "附件5/result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc"
+    }
+  },
+  "no18": {
+    "variant": "no18",
+    "days": 365,
+    "checks": {
+      "soc_reconstruction_kwh": 1.0368239600211382e-10,
+      "balance_kwh": 1.1368683772161603e-13,
+      "h_reconstruction_kwh": 1.1368683772161603e-13,
+      "w_reconstruction_kwh": 5.684341886080802e-14,
+      "soc_bounds_kwh": 0.0,
+      "power_kwh": 0.0,
+      "nonnegative_kwh": 0.0,
+      "emergency_charging_count": 0,
+      "simultaneous_count": 0,
+      "plan_ledger_kwh": 1.1368683772161603e-13,
+      "executed_template_mapping_kwh": 0.0,
+      "lp_residual": 7.275957614183426e-12,
+      "settlement_identity_yuan": 1.4551915228366852e-11
+    },
+    "initial_feb_soc_kwh": 10800.0,
+    "calendar_cost_yuan": 15221359.86303927,
+    "template_cost_yuan": 15221347.368194284,
+    "planned_cost_yuan": 13958160.674603667,
+    "adjustment_net_cost_yuan": 185102.19069322565,
+    "calendar_emergency_cost_yuan": 1078084.5028973918,
+    "template_emergency_cost_yuan": 1078084.5028973918,
+    "calendar_emergency_kwh": 189407.28934815334,
+    "template_emergency_kwh": 189407.28934815337,
+    "terminal_midnight_soc_kwh": 1807.3803654154813,
+    "terminal_template_soc_kwh": 1780.5615382967842,
+    "accepted_updates": {
+      "6": 291,
+      "12": 297,
+      "18": 0
+    },
+    "same_actions_no_refund_extra_cost_yuan": 507903.30394160905,
+    "paper_dates": [
+      {
+        "date": "2025-03-20",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 666.7668124372889,
+          "18:00": 663.0953541888455,
+          "20:00": 57.51577228122278
+        },
+        "calendar_q_kwh": 78399.1870365333,
+        "calendar_cost_yuan": 54646.591736289134,
+        "soc0_kwh": 9318.546831596861,
+        "soc24_kwh": 8790.493583019734,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-06-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 0.0,
+          "14:00": 0.0,
+          "16:00": 126.8650675089519,
+          "18:00": 440.1454056486341,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 35220.511398421106,
+        "calendar_cost_yuan": 21804.980567236555,
+        "soc0_kwh": 3592.5463616337574,
+        "soc24_kwh": 3855.508215114564,
+        "emergency_events": []
+      },
+      {
+        "date": "2025-09-23",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 380.02124999999995,
+          "14:00": 0.0,
+          "16:00": 455.799784350586,
+          "18:00": 768.3849370744492,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 66128.63909175218,
+        "calendar_cost_yuan": 51728.82499052968,
+        "soc0_kwh": 1454.2759697661227,
+        "soc24_kwh": 2252.687900561463,
+        "emergency_events": [
+          [
+            45923,
+            "09:10-10:00",
+            208.94030704040318
+          ],
+          [
+            null,
+            "20:30-20:50",
+            1313.6556038586289
+          ],
+          [
+            null,
+            "21:00-21:50",
+            138.59463445002248
+          ]
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "specified_q_kwh": {
+          "10:00": 0.0,
+          "12:00": 930.9627907141792,
+          "14:00": 0.0,
+          "16:00": 836.3188272349042,
+          "18:00": 723.096739684211,
+          "20:00": 0.0
+        },
+        "calendar_q_kwh": 96353.35165963449,
+        "calendar_cost_yuan": 62854.64705631089,
+        "soc0_kwh": 1906.0956053658172,
+        "soc24_kwh": 2076.0743770798135,
+        "emergency_events": [
+          [
+            46012,
+            "08:00-08:10",
+            21.731674502224337
+          ]
+        ]
+      }
+    ],
+    "source_hashes": {
+      "附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "附件5/result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc"
+    }
+  }
+}
