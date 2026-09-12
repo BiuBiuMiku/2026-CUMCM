@@ -54,13 +54,13 @@ def fit(x,y,train,val,seed,epochs):
 
 def data_arrays():
     data=load_data()
-    # Raw timestamps are interpreted as interval starts, consistent with template.
-    # Jan1 00:00 is absent; use the supplied representative midnight load only
-    # for the ten-minute initialization before the first observation.
-    ref=list(read_xlsx(ROOT/'C题/附件/附件1.xlsx').values())[0]
-    load=np.r_[float(ref[-1][2]),data.load_kw.reshape(-1)]
-    pv=np.r_[0.,data.pv_kw.reshape(-1)]
-    price=np.r_[data.price[-1],data.price[:-1]]
+    # Attachment 2 uses interval-end labels: 00:10 is the measured power for
+    # [00:00, 00:10), and 0:00+1 is the final [23:50, 24:00) interval.
+    # These arrays already cover the natural calendar year and must not be
+    # shifted merely to match the contradictory result-template labels.
+    load=data.load_kw.reshape(-1)
+    pv=data.pv_kw.reshape(-1)
+    price=data.price.copy()
     return data,load,pv,price
 
 
@@ -78,7 +78,7 @@ def main():
     base[0]=np.tile(np.asarray([r[2] for r in list(read_xlsx(ROOT/'C题/附件/附件1.xlsx').values())[0][1:]]),2)
     load_pred=base.copy();load_cut=np.full(365,-1);models=[]
     issue=np.repeat(np.arange(365)*144,288)
-    target=(np.arange(365)[:,None]*144+np.arange(1,289)).reshape(-1)
+    target=(np.arange(365)[:,None]*144+np.arange(288)).reshape(-1)
     x=xx.reshape(-1,xx.shape[-1]); y=np.full(len(target),np.nan)
     valid=target<len(load);y[valid]=load[target[valid]]-base.reshape(-1)[valid]
     cuts=[21]+[(date(2025,m,1)-date(2025,1,1)).days for m in range(2,13)]
@@ -102,7 +102,10 @@ def main():
     xpv=np.column_stack([raw.reshape(-1),leads/24,np.sin(2*np.pi*hours/24),np.cos(2*np.pi*hours/24),
         np.sin(season),np.cos(season),np.sin(2*np.pi*(issued%144)/144),np.cos(2*np.pi*(issued%144)/144),
         repeated.mean(1),repeated.max(1)]).astype(np.float32)
-    ypv=np.full(len(targets),np.nan);m=targets<len(pv);ypv[m]=pv[targets[m]]-raw.reshape(-1)[m]
+    # Forecast targets are clock-hour boundaries.  Under the endpoint-label
+    # convention, the observation at boundary b is stored in interval b-1.
+    ypv=np.full(len(targets),np.nan);m=(targets>=1)&(targets<=len(pv))
+    ypv[m]=pv[targets[m]-1]-raw.reshape(-1)[m]
     groups=((issued%144)//36)*4+(leads-1)//6
     def biases(mask):
         sums=np.bincount(groups[mask],weights=ypv[mask],minlength=16)
@@ -146,19 +149,20 @@ def main():
         print('pv',data.dates[cut],alpha,flush=True)
 
     # Archive predictions at issue time, before any scenario errors are formed.
-    net=np.empty((1460,145));net_raw=np.empty_like(net);net_bias=np.empty_like(net)
+    net=np.empty((1460,144));net_raw=np.empty_like(net);net_bias=np.empty_like(net)
     for k in range(1460):
-        day=k//4;start=k*36;stamps=start+np.arange(145)
-        anchor_p=pv[start];anchor_l=load[start]
-        pred_l=np.interp(stamps-day*144,np.arange(1,289),load_pred[day])
-        pred_l[0]=anchor_l
+        day=k//4;start=k*36;offset=(k%4)*36
+        pred_l=load_pred[day,offset:offset+144]
+        # The preceding endpoint is observable at issue time.  Jan 1 00:00
+        # has no earlier measurement in Attachment 2, and PV is set to zero.
+        anchor_p=0. if start==0 else pv[start-1]
         for source,dest in [(calibrated,net),(raw,net_raw),(mean_only,net_bias)]:
-            pred_p=np.interp(np.arange(145),np.arange(0,145,6),np.r_[anchor_p,source[k]])
-            dest[k]=pred_l-pred_p
+            pv_nodes=np.interp(np.arange(145),np.arange(0,145,6),np.r_[anchor_p,source[k]])
+            dest[k]=pred_l-pv_nodes[:-1]
     truth=load-pv
     errors=np.full_like(net,np.nan)
     for k in range(1460):
-        length=min(145,len(truth)-k*36)
+        length=min(144,len(truth)-k*36)
         errors[k,:length]=truth[k*36:k*36+length]-net[k,:length]
     evaluation=(issued>=31*144)&np.isfinite(ypv)
     metrics={}

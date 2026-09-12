@@ -16,61 +16,61 @@
       "kind": "load",
       "cutoff": "2025-03-01",
       "alpha": 1.0,
-      "epoch": 45
+      "epoch": 46
     },
     {
       "kind": "load",
       "cutoff": "2025-04-01",
       "alpha": 1.0,
-      "epoch": 48
+      "epoch": 39
     },
     {
       "kind": "load",
       "cutoff": "2025-05-01",
       "alpha": 1.0,
-      "epoch": 44
+      "epoch": 42
     },
     {
       "kind": "load",
       "cutoff": "2025-06-01",
       "alpha": 1.0,
-      "epoch": 50
+      "epoch": 47
     },
     {
       "kind": "load",
       "cutoff": "2025-07-01",
       "alpha": 1.0,
-      "epoch": 45
+      "epoch": 50
     },
     {
       "kind": "load",
       "cutoff": "2025-08-01",
       "alpha": 1.0,
-      "epoch": 45
+      "epoch": 49
     },
     {
       "kind": "load",
       "cutoff": "2025-09-01",
       "alpha": 1.0,
-      "epoch": 5
+      "epoch": 6
     },
     {
       "kind": "load",
       "cutoff": "2025-10-01",
       "alpha": 1.0,
-      "epoch": 49
+      "epoch": 48
     },
     {
       "kind": "load",
       "cutoff": "2025-11-01",
       "alpha": 1.0,
-      "epoch": 45
+      "epoch": 40
     },
     {
       "kind": "load",
       "cutoff": "2025-12-01",
       "alpha": 1.0,
-      "epoch": 27
+      "epoch": 37
     },
     {
       "kind": "pv",

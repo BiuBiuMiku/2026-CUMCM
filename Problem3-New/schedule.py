@@ -30,7 +30,9 @@ def lp(paths,price,state,old=None,fixed_first=None):
     bounds=[(0,None)]*nv
     for s in range(S):
         for t in range(T+1):bounds[E+s*(T+1)+t]=(EMIN,EMAX)
-        objective[E+s*(T+1)+T]=-ETA*float(price.min())/S
+        # E is internal battery energy. Replacing 1 kWh of terminal E at the
+        # next valley requires 1/ETA kWh of grid-side charging energy.
+        objective[E+s*(T+1)+T]=-float(price.min())/(ETA*S)
     objective[H:E]=np.tile(5*price/S,S)
     if fixed_first is not None:bounds[0]=(fixed_first,fixed_first);objective[0]=0
     if old is not None:
@@ -72,7 +74,7 @@ def score(q,paths,price,state,old=None,fixed_first=False):
     else:
         delta=q[:len(old)]-old
         purchase=float(price[:len(old)]@(1.5*np.maximum(delta,0)-.5*np.maximum(-delta,0))+q[len(old):]@price[len(old):])
-    return float(purchase+cost.mean()-ETA*price.min()*energy.mean())
+    return float(purchase+cost.mean()-price.min()/ETA*energy.mean())
 
 
 def scenarios(f,k,count):
@@ -87,6 +89,7 @@ def scenarios(f,k,count):
     chosen=ids[np.minimum(len(ids)-1,((np.arange(count)+rng.random(count))/count*len(ids)).astype(int))]
     assert np.all(chosen*36+144<k*36)
     assert np.all(f['pv_cut'][chosen]<=chosen*36)
+    assert np.all(f['q2_cut'][chosen//4] <= (chosen//4)*144)
     return f['net'][k]+f['errors'][chosen],chosen
 
 

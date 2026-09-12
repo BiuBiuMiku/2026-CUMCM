@@ -1,0 +1,1602 @@
+{
+  "q2_reused": "monthly model weights, scaler, alpha, feature rule only",
+  "q2_outputs_forbidden": [
+    "result2.xlsx",
+    "trajectory.npz",
+    "final_verified.npz",
+    "final_report.json",
+    "forecasts.npz"
+  ],
+  "formula": "N3=N2-beta(month,issue-hour,lead-block)*(PV_official_calibrated-PV_historical_baseline)",
+  "beta_rule": "grid {0,.25,.5,.75,1}; prior 28 completed days only; require at least 1% MSE improvement; freeze within month",
+  "beta_records": [
+    {
+      "month": "2025-02",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 267801.03296627034,
+      "mse_selected": 267799.42676793534
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 821273.7761755199,
+      "mse_selected": 812307.6547569265
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 909372.3865352311,
+      "mse_selected": 909372.3865352311
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 368585.95928743423,
+      "mse_selected": 368584.15768078406
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 821273.7761755199,
+      "mse_selected": 760976.0254664344
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 909372.3865352311,
+      "mse_selected": 869754.5575019491
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 368585.95928743423,
+      "mse_selected": 368584.15768078406
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 216153.48252672562,
+      "mse_selected": 216152.30175953556
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 909372.3865352311,
+      "mse_selected": 847023.4120105064
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 368585.95928743423,
+      "mse_selected": 368584.15768078406
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 216153.48252672562,
+      "mse_selected": 216152.30175953556
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 739609.4074716924,
+      "mse_selected": 739609.4074716924
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 368585.95928743423,
+      "mse_selected": 368584.15768078406
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 216153.48252672562,
+      "mse_selected": 216152.30175953556
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 739609.4074716924,
+      "mse_selected": 713722.1431166204
+    },
+    {
+      "month": "2025-02",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 851931.9141583685,
+      "mse_selected": 851931.9141583685
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 142250.13246467957,
+      "mse_selected": 142245.63494023742
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 210567.2202962054,
+      "mse_selected": 191529.31718880002
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 197761.8149883327,
+      "mse_selected": 197761.8149883327
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 183397.1552350188,
+      "mse_selected": 183391.44328167033
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 210567.2202962054,
+      "mse_selected": 194500.5289964466
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 197761.8149883327,
+      "mse_selected": 197761.8149883327
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 183397.1552350188,
+      "mse_selected": 183391.44328167033
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 146567.11296353734,
+      "mse_selected": 146563.27899341012
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 197761.8149883327,
+      "mse_selected": 197761.8149883327
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 183397.1552350188,
+      "mse_selected": 183391.44328167033
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 146567.11296353734,
+      "mse_selected": 146563.27899341012
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 289480.6905471926,
+      "mse_selected": 289480.6905471926
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 183397.1552350188,
+      "mse_selected": 183391.44328167033
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 146567.11296353734,
+      "mse_selected": 146563.27899341012
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 289480.6905471926,
+      "mse_selected": 289480.6905471926
+    },
+    {
+      "month": "2025-03",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 269396.193272501,
+      "mse_selected": 269396.193272501
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 36258.658397369254,
+      "mse_selected": 36258.658397369254
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 383247.0614011194,
+      "mse_selected": 365333.55783233035
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 465189.56512583373,
+      "mse_selected": 465189.56512583373
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 29040.18373160664,
+      "mse_selected": 29040.18373160664
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 383247.0614011194,
+      "mse_selected": 363471.96717826434
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 465189.56512583373,
+      "mse_selected": 465189.56512583373
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 29040.18373160664,
+      "mse_selected": 29040.18373160664
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 33141.119079431635,
+      "mse_selected": 33141.119079431635
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 465189.56512583373,
+      "mse_selected": 465189.56512583373
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 29040.18373160664,
+      "mse_selected": 29040.18373160664
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 33141.119079431635,
+      "mse_selected": 33141.119079431635
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 359955.90242133307,
+      "mse_selected": 359955.90242133307
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 29040.18373160664,
+      "mse_selected": 29040.18373160664
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 33141.119079431635,
+      "mse_selected": 33141.119079431635
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 359955.90242133307,
+      "mse_selected": 311702.73491618293
+    },
+    {
+      "month": "2025-04",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 401922.8592341178,
+      "mse_selected": 401922.8592341178
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 29389.738229744125,
+      "mse_selected": 29389.738229744125
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 285073.21740514465,
+      "mse_selected": 208093.09837123187
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 236106.59343243722,
+      "mse_selected": 214597.56059439693
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 25570.27306804457,
+      "mse_selected": 23834.99999716347
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 285073.21740514465,
+      "mse_selected": 130501.6240084242
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 236106.59343243722,
+      "mse_selected": 164801.42910833503
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 25570.27306804457,
+      "mse_selected": 23922.233247960212
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 22794.700579912966,
+      "mse_selected": 22794.700579912966
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 236106.59343243722,
+      "mse_selected": 154359.46556624005
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 25570.27306804457,
+      "mse_selected": 23908.528722314204
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 22794.700579912966,
+      "mse_selected": 22794.700579912966
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 263598.9176576686,
+      "mse_selected": 263598.9176576686
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 25570.27306804457,
+      "mse_selected": 23972.406920277677
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 22794.700579912966,
+      "mse_selected": 22794.700579912966
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 263598.9176576686,
+      "mse_selected": 210788.2337757865
+    },
+    {
+      "month": "2025-05",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 256073.15624450656,
+      "mse_selected": 212525.29563311933
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 27511.941570025483,
+      "mse_selected": 27477.462403865986
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 225861.99072820393,
+      "mse_selected": 162487.43489881468
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 252262.8960870199,
+      "mse_selected": 249790.23176139823
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 113692.477051664,
+      "mse_selected": 113692.477051664
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 225861.99072820393,
+      "mse_selected": 131291.62575904225
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 252262.8960870199,
+      "mse_selected": 229791.65525308606
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 113692.477051664,
+      "mse_selected": 113692.477051664
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 26810.808086706704,
+      "mse_selected": 26810.808086706704
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 252262.8960870199,
+      "mse_selected": 201242.50403293886
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 113692.477051664,
+      "mse_selected": 113692.477051664
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 26810.808086706704,
+      "mse_selected": 26810.808086706704
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 246109.45135072168,
+      "mse_selected": 212156.77229566875
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 113692.477051664,
+      "mse_selected": 113692.477051664
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 26810.808086706704,
+      "mse_selected": 26809.721634731584
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.5,
+      "samples": 972,
+      "mse_beta0": 246109.45135072168,
+      "mse_selected": 194795.73429164712
+    },
+    {
+      "month": "2025-06",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 251106.2452301814,
+      "mse_selected": 251106.2452301814
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 48242.7835134997,
+      "mse_selected": 48207.04837960331
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 401927.60284381814,
+      "mse_selected": 290318.607188655
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 558590.7479267936,
+      "mse_selected": 549531.14540001
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 76132.85762233379,
+      "mse_selected": 76132.85762233379
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 401927.60284381814,
+      "mse_selected": 199893.27597207122
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 558590.7479267936,
+      "mse_selected": 558590.7479267936
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 76132.85762233379,
+      "mse_selected": 76132.85762233379
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 48540.16165838142,
+      "mse_selected": 48540.16165838142
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 558590.7479267936,
+      "mse_selected": 543200.2591073154
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 76132.85762233379,
+      "mse_selected": 76132.85762233379
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 48540.16165838142,
+      "mse_selected": 48540.16165838142
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 405704.7476021501,
+      "mse_selected": 405704.7476021501
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 76132.85762233379,
+      "mse_selected": 76132.85762233379
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 48540.16165838142,
+      "mse_selected": 48540.16165838142
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.5,
+      "samples": 972,
+      "mse_beta0": 405704.7476021501,
+      "mse_selected": 366107.1176592797
+    },
+    {
+      "month": "2025-07",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 597331.1438126694,
+      "mse_selected": 597331.1438126694
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 103047.78167053983,
+      "mse_selected": 103047.78167053983
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 1722800.9651788936,
+      "mse_selected": 1722800.9651788936
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 2322482.1494312724,
+      "mse_selected": 2322482.1494312724
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 211084.8008613359,
+      "mse_selected": 202637.38822291367
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 1722800.9651788936,
+      "mse_selected": 1722800.9651788936
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 2322482.1494312724,
+      "mse_selected": 2322482.1494312724
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 211084.8008613359,
+      "mse_selected": 192112.15782112684
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 163642.7865561042,
+      "mse_selected": 163642.7865561042
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 2322482.1494312724,
+      "mse_selected": 2175254.6612107456
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 211084.8008613359,
+      "mse_selected": 197217.65798348657
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 163642.7865561042,
+      "mse_selected": 163642.7865561042
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 1937985.1787973575,
+      "mse_selected": 1937985.1787973575
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 211084.8008613359,
+      "mse_selected": 193157.91333561737
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 163642.7865561042,
+      "mse_selected": 163642.7865561042
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 1937985.1787973575,
+      "mse_selected": 1937985.1787973575
+    },
+    {
+      "month": "2025-08",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 2551241.614916866,
+      "mse_selected": 2551241.614916866
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 72425.25079896835,
+      "mse_selected": 72109.02934015858
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 315724.71957310324,
+      "mse_selected": 270352.4555819097
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 257249.55212537822,
+      "mse_selected": 222692.48875214224
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 82336.98217626534,
+      "mse_selected": 79207.00480322856
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 315724.71957310324,
+      "mse_selected": 208021.35289875304
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 257249.55212537822,
+      "mse_selected": 181637.34923950932
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 82336.98217626534,
+      "mse_selected": 79018.66537311114
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 89950.62455212776,
+      "mse_selected": 89950.62455212776
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 257249.55212537822,
+      "mse_selected": 127394.3203124659
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 82336.98217626534,
+      "mse_selected": 79112.42619684011
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 89950.62455212776,
+      "mse_selected": 89938.5222841486
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 373536.41056999913,
+      "mse_selected": 373536.41056999913
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 82336.98217626534,
+      "mse_selected": 78896.90935902363
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 89950.62455212776,
+      "mse_selected": 89442.28301450945
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 373536.41056999913,
+      "mse_selected": 327756.3987617835
+    },
+    {
+      "month": "2025-09",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 284119.77622875717,
+      "mse_selected": 283983.8912572352
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 54680.544064626614,
+      "mse_selected": 53907.347872411025
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 397669.5820622181,
+      "mse_selected": 341777.5131395205
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 302174.9516205219,
+      "mse_selected": 302174.9516205219
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 97328.36708626366,
+      "mse_selected": 91888.73589132378
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 397669.5820622181,
+      "mse_selected": 217859.91471146417
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 302174.9516205219,
+      "mse_selected": 302174.9516205219
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 97328.36708626366,
+      "mse_selected": 91832.73038656579
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 50321.6491658716,
+      "mse_selected": 50045.935679668815
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.75,
+      "samples": 1008,
+      "mse_beta0": 302174.9516205219,
+      "mse_selected": 239774.26774450077
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 97328.36708626366,
+      "mse_selected": 92430.58872170716
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.75,
+      "samples": 972,
+      "mse_beta0": 50321.6491658716,
+      "mse_selected": 49728.659954245115
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.75,
+      "samples": 972,
+      "mse_beta0": 445047.470666971,
+      "mse_selected": 362268.5852071833
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 1.0,
+      "samples": 1008,
+      "mse_beta0": 97328.36708626366,
+      "mse_selected": 93864.41568384154
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.75,
+      "samples": 972,
+      "mse_beta0": 50321.6491658716,
+      "mse_selected": 49506.254067766014
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.5,
+      "samples": 972,
+      "mse_beta0": 445047.470666971,
+      "mse_selected": 396369.79046057595
+    },
+    {
+      "month": "2025-10",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 309772.7343551347,
+      "mse_selected": 309772.7343551347
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 30789.96319426473,
+      "mse_selected": 30789.96319426473
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 152533.30746780147,
+      "mse_selected": 152533.30746780147
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 131486.10296034437,
+      "mse_selected": 131486.10296034437
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 46611.93614687106,
+      "mse_selected": 46611.93614687106
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 152533.30746780147,
+      "mse_selected": 152533.30746780147
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 131486.10296034437,
+      "mse_selected": 111443.68181383975
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 46611.93614687106,
+      "mse_selected": 46611.93614687106
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 40237.504302256006,
+      "mse_selected": 40237.504302256006
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 131486.10296034437,
+      "mse_selected": 102558.38261826
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 46611.93614687106,
+      "mse_selected": 46611.93614687106
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 40237.504302256006,
+      "mse_selected": 40237.504302256006
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 154634.77655241385,
+      "mse_selected": 154634.77655241385
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 46611.93614687106,
+      "mse_selected": 46611.93614687106
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 40237.504302256006,
+      "mse_selected": 40237.504302256006
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 154634.77655241385,
+      "mse_selected": 154634.77655241385
+    },
+    {
+      "month": "2025-11",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 131800.99017137827,
+      "mse_selected": 131800.99017137827
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 0,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 30403.184250642033,
+      "mse_selected": 30403.184250642033
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 0,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 78650.89489729467,
+      "mse_selected": 76068.2187288432
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 0,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 106035.05492052138,
+      "mse_selected": 100142.67296166996
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 0,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 16545.603800122382,
+      "mse_selected": 16543.85291806623
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 6,
+      "lead_hours": "0-6",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 78650.89489729467,
+      "mse_selected": 75792.89749663982
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 6,
+      "lead_hours": "6-12",
+      "beta": 0.25,
+      "samples": 1008,
+      "mse_beta0": 106035.05492052138,
+      "mse_selected": 101257.9129712612
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 6,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 16545.603800122382,
+      "mse_selected": 16543.85291806623
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 6,
+      "lead_hours": "18-24",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 24448.72888641921,
+      "mse_selected": 24448.72888641921
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 12,
+      "lead_hours": "0-6",
+      "beta": 0.5,
+      "samples": 1008,
+      "mse_beta0": 106035.05492052138,
+      "mse_selected": 81809.79332508374
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 12,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 16545.603800122382,
+      "mse_selected": 16543.85291806623
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 12,
+      "lead_hours": "12-18",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 24448.72888641921,
+      "mse_selected": 24448.72888641921
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 12,
+      "lead_hours": "18-24",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 87880.778154174,
+      "mse_selected": 76538.58849537294
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 18,
+      "lead_hours": "0-6",
+      "beta": 0.0,
+      "samples": 1008,
+      "mse_beta0": 16545.603800122382,
+      "mse_selected": 16543.85291806623
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 18,
+      "lead_hours": "6-12",
+      "beta": 0.0,
+      "samples": 972,
+      "mse_beta0": 24448.72888641921,
+      "mse_selected": 24448.72888641921
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 18,
+      "lead_hours": "12-18",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 87880.778154174,
+      "mse_selected": 77254.82962148215
+    },
+    {
+      "month": "2025-12",
+      "issue_hour": 18,
+      "lead_hours": "18-24",
+      "beta": 0.25,
+      "samples": 972,
+      "mse_beta0": 107216.0396455985,
+      "mse_selected": 104397.89625991484
+    }
+  ],
+  "training_performed": false,
+  "mature_error_rule": "a 24-hour error path is usable only after every target has occurred",
+  "missing_future_truth_cells": 216,
+  "evaluation_net_mae_kw": 352.7770968411953
+}
