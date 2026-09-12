@@ -1,0 +1,22 @@
+{
+  "days": 334,
+  "normal_cost_yuan": 14706150.48475836,
+  "emergency_cost_yuan": 564276.5360214618,
+  "total_cost_yuan": 15270427.020779822,
+  "emergency_kwh": 95049.73241163051,
+  "initial_feb_soc": 5450.313999537037,
+  "terminal_soc": 2302.3576408424597,
+  "checks": {
+    "soc": 6.730260793119669e-11,
+    "balance": 1.1368683772161603e-13,
+    "bounds": 0.0,
+    "power": 0.0,
+    "emergency_charge": 0,
+    "simultaneous": 0,
+    "future_scenarios": 0,
+    "lp": 9.094947017729282e-12
+  },
+  "source_hashes": {
+    "attachment4": "20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71"
+  }
+}

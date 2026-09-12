@@ -1,0 +1,60 @@
+{
+  "main": {
+    "variant": "main",
+    "days": 334,
+    "planned_cost": 14728685.709635366,
+    "adjustment_net_cost": 245642.64399036704,
+    "emergency_cost": 210853.37108602043,
+    "total_cost": 15185181.724711753,
+    "emergency_kwh": 40007.97302862873,
+    "initial_feb_soc": 1200.0,
+    "terminal_soc": 2004.0522973473637,
+    "accepted_updates": {
+      "6": 277,
+      "12": 293,
+      "18": 165
+    },
+    "checks": {
+      "soc": 1.6552803572267294e-10,
+      "balance": 5.684341886080802e-14,
+      "bounds": 0.0,
+      "power": 0.0,
+      "plan": 1.1368683772161603e-13,
+      "mapping": 0.0,
+      "emergency_charge": 0,
+      "simultaneous": 0,
+      "lp": 7.275957614183426e-12,
+      "future_scenarios": 0,
+      "wrong_issue_time": 0
+    }
+  },
+  "only0": {
+    "variant": "only0",
+    "days": 334,
+    "planned_cost": 14755727.267387673,
+    "adjustment_net_cost": 0.0,
+    "emergency_cost": 619660.6251350871,
+    "total_cost": 15375387.89252276,
+    "emergency_kwh": 104979.78150526586,
+    "initial_feb_soc": 1200.0,
+    "terminal_soc": 1992.9430509020508,
+    "accepted_updates": {
+      "6": 0,
+      "12": 0,
+      "18": 0
+    },
+    "checks": {
+      "soc": 1.7462298274040222e-10,
+      "balance": 1.1368683772161603e-13,
+      "bounds": 0.0,
+      "power": 0.0,
+      "plan": 0.0,
+      "mapping": 0.0,
+      "emergency_charge": 0,
+      "simultaneous": 0,
+      "lp": 7.275957614183426e-12,
+      "future_scenarios": 0,
+      "wrong_issue_time": 0
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "rule": "future prices are predicted; actual prices are used only when their interval settles",
+  "models": [
+    {
+      "month_start_day": 31,
+      "alpha": 1,
+      "epochs": 35,
+      "validation_mae": 0.04264099343195316
+    },
+    {
+      "month_start_day": 59,
+      "alpha": 1,
+      "epochs": 35,
+      "validation_mae": 0.03616590058824461
+    },
+    {
+      "month_start_day": 90,
+      "alpha": 1,
+      "epochs": 33,
+      "validation_mae": 0.03558870204633063
+    },
+    {
+      "month_start_day": 120,
+      "alpha": 1,
+      "epochs": 12,
+      "validation_mae": 0.04251816886690056
+    },
+    {
+      "month_start_day": 151,
+      "alpha": 1,
+      "epochs": 20,
+      "validation_mae": 0.04067801636570319
+    },
+    {
+      "month_start_day": 181,
+      "alpha": 1,
+      "epochs": 22,
+      "validation_mae": 0.03737909191053206
+    },
+    {
+      "month_start_day": 212,
+      "alpha": 1,
+      "epochs": 31,
+      "validation_mae": 0.03808805771331312
+    },
+    {
+      "month_start_day": 243,
+      "alpha": 1,
+      "epochs": 34,
+      "validation_mae": 0.040342209195703825
+    },
+    {
+      "month_start_day": 273,
+      "alpha": 1,
+      "epochs": 34,
+      "validation_mae": 0.03506798139258484
+    },
+    {
+      "month_start_day": 304,
+      "alpha": 1,
+      "epochs": 8,
+      "validation_mae": 0.033377708395186466
+    },
+    {
+      "month_start_day": 334,
+      "alpha": 1,
+      "epochs": 23,
+      "validation_mae": 0.033561621585106026
+    }
+  ],
+  "evaluation_mae_yuan_per_kwh": 0.04078142502818568
+}
